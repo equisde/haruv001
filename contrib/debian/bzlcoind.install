@@ -1,0 +1,2 @@
+debian/bin/harud usr/bin
+src/harud usr/lib/haru

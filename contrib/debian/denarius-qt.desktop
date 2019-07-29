@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Haru
+Comment=Haru P2P Cryptocurrency
+Comment[fr]=Haru, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Haru, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/Haru
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/bitcoin80.xpm
+MimeType=x-scheme-handler/haru;
+Categories=Office;

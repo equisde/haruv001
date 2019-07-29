@@ -1,0 +1,5 @@
+haru-qt usr/bin
+share/pixmaps/bitcoin32.xpm usr/share/pixmaps
+share/pixmaps/bitcoin80.xpm usr/share/pixmaps
+debian/haru-qt.desktop usr/share/applications
+debian/haru-qt.protocol usr/share/kde4/services/

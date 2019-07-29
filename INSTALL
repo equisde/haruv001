@@ -1,0 +1,9 @@
+Building Haru
+
+See doc/readme-qt.rst for instructions on building Haru QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Haru.
+
+See doc/build-*.txt for instructions on building harud,
+the intended-for-services, no-graphical-interface, reference
+implementation of Haru.
