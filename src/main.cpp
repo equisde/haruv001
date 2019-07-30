@@ -3598,7 +3598,7 @@ bool LoadBlockIndex(bool fAllowNew)
         if (!fAllowNew)
             return false;
 
-        const char* pszTimestamp = "https://www.coindesk.com/microsoft-is-pushing-new-blokchain-id-products-but-theres-pushck-too/";
+        const char* pszTimestamp = "https://www.coindesk.com/facebook-libra-might-not-ever-launch-concedes-firm/";
         CTransaction txNew;
         txNew.nTime = 1564492261;
         txNew.vin.resize(1);
@@ -3613,13 +3613,13 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nTime    = 1564492261;
         block.nVersion = 1;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-		    block.nNonce   = 1225066;
+		    block.nNonce   = 0;
 
 		    if(fTestNet)
         {
             block.nNonce   = 13278;
         }
-        if (false && (block.GetHash() != hashGenesisBlock)) {
+        if (true && (block.GetHash() != hashGenesisBlock)) {
 
         // This will figure out a valid hash and Nonce if you're
         // creating a different genesis block:
@@ -3642,7 +3642,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
 
         //// debug print
-        assert(block.hashMerkleRoot == uint256("0xb8c25057a6016dc5513f7e74cff3d881216bac4fe87bab04abb6932cf19dfea9"));
+        assert(block.hashMerkleRoot == uint256("0x"));
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
