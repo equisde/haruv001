@@ -3613,7 +3613,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nTime    = 1564492261;
         block.nVersion = 1;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-		    block.nNonce   = 0;
+		    block.nNonce   = 1225066;
 
 		    if(fTestNet)
         {
@@ -3642,7 +3642,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
 
         //// debug print
-        assert(block.hashMerkleRoot == uint256("0x"));
+        assert(block.hashMerkleRoot == uint256("0xb8c25057a6016dc5513f7e74cff3d881216bac4fe87bab04abb6932cf19dfea9"));
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
