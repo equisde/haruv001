@@ -3613,13 +3613,13 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nTime    = 1564456193;
         block.nVersion = 1;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-		    block.nNonce   = 883683;
+		    block.nNonce   = 0;
 
 		    if(fTestNet)
         {
             block.nNonce   = 13278;
         }
-        if (false && (block.GetHash() != hashGenesisBlock)) {
+        if (true && (block.GetHash() != hashGenesisBlock)) {
 
         // This will figure out a valid hash and Nonce if you're
         // creating a different genesis block:
@@ -3642,7 +3642,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
 
         //// debug print
-        assert(block.hashMerkleRoot == uint256("0x8a6f632d3965cfb5900271a7caf9acbf59932532e9fd5a59b3ffaf8722dc0d78"));
+        assert(block.hashMerkleRoot == uint256("0x"));
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
