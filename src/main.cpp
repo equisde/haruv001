@@ -3610,7 +3610,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.vtx.push_back(txNew);
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
-        block.nTime    = 1539367364;
+        block.nTime    = 1564456193;
         block.nVersion = 1;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
 		    block.nNonce   = 883683;
