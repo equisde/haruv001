@@ -3598,9 +3598,9 @@ bool LoadBlockIndex(bool fAllowNew)
         if (!fAllowNew)
             return false;
 
-        const char* pszTimestamp = "https://www.coindesk.com/microsoft-is-pushing-new-blockchain-id-products-but-theres-pushck-too/";
+        const char* pszTimestamp = "https://www.coindesk.com/microsoft-is-pushing-new-blokchain-id-products-but-theres-pushck-too/";
         CTransaction txNew;
-        txNew.nTime = 1539367364;
+        txNew.nTime = 1564492261;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -3610,16 +3610,16 @@ bool LoadBlockIndex(bool fAllowNew)
         block.vtx.push_back(txNew);
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
-        block.nTime    = 1564456193;
+        block.nTime    = 1564492261;
         block.nVersion = 1;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-		    block.nNonce   = 883683;
+		    block.nNonce   = 0;
 
 		    if(fTestNet)
         {
             block.nNonce   = 13278;
         }
-        if (false && (block.GetHash() != hashGenesisBlock)) {
+        if (true && (block.GetHash() != hashGenesisBlock)) {
 
         // This will figure out a valid hash and Nonce if you're
         // creating a different genesis block:
@@ -3642,7 +3642,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
 
         //// debug print
-        assert(block.hashMerkleRoot == uint256("0x66e9eacd1df4e1fc5df084dfb86bcfd8b242d5fa8369680e4cebebbd4119767b"));
+        assert(block.hashMerkleRoot == uint256("0x"));
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
