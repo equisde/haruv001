@@ -1527,7 +1527,7 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 	else if (pindexBest->nHeight <= 1500000) // V1.0.0 / Block 2m ~1m HARU
 		nSubsidy = 0.05 * COIN;
 	else if (pindexBest->nHeight <= 2000000) // V1.0.0 / Block 3m ~1m HARU
-		nSubsidy = 0.08 * COIN;		
+		nSubsidy = 0.08 * COIN;	
     else if (pindexBest->nHeight > LAST_POW_BLOCK) // Block 1.5m
 		nSubsidy = 0; // PoW Ends ~ 4,500,000 Total HARU Mined via PoW
 
@@ -3613,13 +3613,13 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nTime    = 1564492261;
         block.nVersion = 1;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-		    block.nNonce   = 0;
+		    block.nNonce   = 78753;
 
 		    if(fTestNet)
         {
             block.nNonce   = 13278;
         }
-        if (true && (block.GetHash() != hashGenesisBlock)) {
+        if (false && (block.GetHash() != hashGenesisBlock)) {
 
         // This will figure out a valid hash and Nonce if you're
         // creating a different genesis block:
@@ -3642,7 +3642,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
 
         //// debug print
-        assert(block.hashMerkleRoot == uint256("0x"));
+        assert(block.hashMerkleRoot == uint256("0xdc7fbc8f99362bf75e301048634039f8ab870dad40c186d90c5f91227dfa0934"));
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());

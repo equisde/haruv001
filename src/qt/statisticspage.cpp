@@ -47,7 +47,7 @@ void StatisticsPage::updateStatistics()
     pwalletMain->GetStakeWeight(*pwalletMain, nMinWeight, nMaxWeight, nWeight);
     uint64_t nNetworkWeight = GetPoSKernelPS();
     int64_t volume = ((pindexBest->nMoneySupply)/100000000);
-	int64_t marketcap = dnrmarket.toDouble();
+    int64_t marketcap = dnrmarket.toDouble();
     int peers = this->model->getNumConnections();
     pPawrate2 = (double)pPawrate;
     QString height = QString::number(nHeight);
@@ -64,21 +64,29 @@ void StatisticsPage::updateStatistics()
     }
 
     QString subsidy = "";
-	if (pindexBest->nHeight < 1000000)
+    if (pindexBest->nHeight <= 50)
     {
         subsidy = "0.2 HARU per block";
     }
-	else if (pindexBest->nHeight < 1500000)
+    else if (pindexBest->nHeight <= 3398)
     {
         subsidy = "0.5 HARU per block";
     }
-	else if (pindexBest->nHeight < 2000000)
+    else if (pindexBest->nHeight <= 1000000)
+    {
+        subsidy = "0.2 HARU per block";
+    }
+    else if (pindexBest->nHeight < 1500000)
     {
         subsidy = "0.1 HARU per block";
     }
-    else if (pindexBest->nHeight > 3000000)
+    else if (pindexBest->nHeight > 2000000)
     {
-        subsidy = "No PoW Reward";
+        subsidy = "0.01 HARU per block";
+    }
+    else if (pindexBest->nHeight <= 3000000)
+    {
+        subsidy = "0";
     }
     QString hardness = QString::number(pHardness, 'f', 6);
     QString hardness2 = QString::number(pHardness2, 'f', 6);
@@ -87,17 +95,17 @@ void StatisticsPage::updateStatistics()
 
     QString QPeers = QString::number(peers);
     QString qVolume = QString::number(volume);
-	QString mn = "4,000 HARU";
-	QString mn2 = "33% of PoW/PoS block reward";
-	
-	ui->mncost->setText("<b><font color=\"orange\">" + mn + "</font></b>");	
-	ui->mnreward->setText("<b><font color=\"orange\">" + mn2 + "</font></b>");
+    QString mn = "4,000 HARU";
+    QString mn2 = "33% of PoW/PoS block reward";
+    
+    ui->mncost->setText("<b><font color=\"orange\">" + mn + "</font></b>"); 
+    ui->mnreward->setText("<b><font color=\"orange\">" + mn2 + "</font></b>");
 
     if(nHeight > heightPrevious)
     {
         ui->heightBox->setText("<b><font color=\"yellow\">" + height + "</font></b>");
     } else {
-		ui->heightBox->setText("<b><font color=\"orange\">" + height + "</font></b>");
+        ui->heightBox->setText("<b><font color=\"orange\">" + height + "</font></b>");
     }
 
     if(0 > stakeminPrevious)
@@ -135,7 +143,7 @@ void StatisticsPage::updateStatistics()
     } else {
         ui->diffBox->setText("<b><font color=\"orange\">" + hardness + "</font></b>");        
     }
-	
+    
     if(marketcap > marketcapPrevious)
     {
         ui->marketcap->setText("<b><font color=\"yellow\">$" + QString::number(marketcap) + " USD</font></b>");
@@ -187,7 +195,7 @@ void StatisticsPage::updateStatistics()
     } else {
         ui->volumeBox->setText("<b><font color=\"orange\">" + qVolume + " HARU" + "</font></b>");
     }
-	
+    
     updatePrevious(nHeight, nMinWeight, nNetworkWeight, phase, subsidy, pHardness, pHardness2, pPawrate2, Qlpawrate, peers, volume, marketcap);
 }
 
@@ -204,7 +212,7 @@ void StatisticsPage::updatePrevious(int nHeight, int nMinWeight, int nNetworkWei
     pawratePrevious = Qlpawrate;
     connectionPrevious = peers;
     volumePrevious = volume;
-	marketcapPrevious = marketcap;
+    marketcapPrevious = marketcap;
 }
 
 void StatisticsPage::setModel(ClientModel *model)

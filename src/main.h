@@ -58,7 +58,7 @@ class CNode;
 
 // General Haru Block Values
 
-static const int LAST_POW_BLOCK = 2000000; // Block 3m Approx. 3 years of Proof of Work before Proof of Stake consensus kicks in
+static const int LAST_POW_BLOCK = 3000000; // Block 3m Approx. 3 years of Proof of Work before Proof of Stake consensus kicks in
 static const int FAIR_LAUNCH_BLOCK = 47; // Last Block until full block reward starts
 static const unsigned int MAX_BLOCK_SIZE = 1000000; // 1MB block hard limit, double the size of Bitcoin
 static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2; // 512kb block soft limit, ditto
@@ -85,7 +85,7 @@ static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20
 /** Maxiumum number of signature check operations in an IsStandard() P2SH script */
 static const unsigned int MAX_P2SH_SIGOPS = 15;
 
-static const uint256 hashGenesisBlock("0x");
+static const uint256 hashGenesisBlock("0x00000d7d557931da37d830ec526a0b5897de3123453f8142d3023af23dedc3fb");
 static const uint256 hashGenesisBlockTestNet("0x");
 
 //inline bool IsProtocolV1RetargetingFixed(int nHeight) { return fTestNet || nHeight > 0; }
