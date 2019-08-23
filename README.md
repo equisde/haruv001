@@ -6,7 +6,7 @@ Tribus Algo PoW/PoS Hybrid Cryptocurrency
 [![GitHub version](https://img.shields.io/github/release/carsenk/haru.svg)](https://badge.fury.io/gh/carsenk%2Fdenarius)
 [![License: GPL v3](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/equisde/haruv001/blob/master/COPYING)
 [![Haru downloads](https://img.shields.io/github/downloads/equisde/haruv001/total.svg?maxAge=2592000)](https://github.com/equisde/haruv001/releases)
-[![Join the chat at https://t.me/joinchat/NOJ_hhb8F3gggosL1KOveg](https://telegram.org/img/t_logo.png)](https://t.me/joinchat/NOJ_hhb8F3gggosL1KOveg)
+[![Join the chat at https://t.me/joinchat/NOJ_hhb8F3gggosL1KOveg](https://cdn.lo4d.com/t/icon/48/telegram-desktop.png)](https://t.me/joinchat/NOJ_hhb8F3gggosL1KOveg)
 Intro
 ==========================
 Haru is a true optional anonymous, untraceable, and secure hybrid cryptocurrency.
