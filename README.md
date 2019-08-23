@@ -1,7 +1,7 @@
 # Haru [HARU]
 Tribus Algo PoW/PoS Hybrid Cryptocurrency
 
-![logo](http://i.imgur.com/gIe5vnw.png)
+![logo](http://cryptoharu.com/assets/img/logo.png)
 
 [![GitHub version](http://cryptoharu.com/assets/img/logo.png)](http://cryptoharu.com/assets/img/logo.png)
 [![License: GPL v3](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/equisde/haruv001/blob/master/COPYING)(https://github.com/carsenk/haru/releases)
@@ -13,7 +13,7 @@ Haru is a true optional anonymous, untraceable, and secure hybrid cryptocurrency
 Ticker: HARU
 
 Haru [HARU] is an anonymous, untraceable, energy efficient, Proof-of-Work (New Tribus Algorithm) and Proof-of-Stake cryptocurrency.
-10,000,000 HARU will be created in approx. about 3 years during the PoW phase. Haru had a 10% Premine of 1,000,000 HARU for bounties, distribution, and marketing.
+60,000,000 HARU will be created in approx. about 3 years during the PoW phase. Haru had a 10% Premine of 6,000,000 HARU for bounties, distribution, and marketing.
 
 Specifications
 ==========================
