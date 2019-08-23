@@ -3,8 +3,8 @@ Tribus Algo PoW/PoS Hybrid Cryptocurrency
 
 ![logo](http://cryptoharu.com/assets/img/logo.png)
 
-[![GitHub version](http://cryptoharu.com/assets/img/logo.png)](http://cryptoharu.com/assets/img/logo.png)
-[![License: GPL v3](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/equisde/haruv001/blob/master/COPYING)(https://github.com/carsenk/haru/releases)
+[![GitHub version](http://cryptoharu.com/assets/img/logo.png)
+[![License: GPL v3](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/equisde/haruv001/blob/master/COPYING)(https://github.com/equisde/haruv001/releases)
 [![Join the chat at https://t.me/joinchat/NOJ_hhb8F3gggosL1KOveg](https://telegram.org/img/t_logo.png)](https://t.me/joinchat/NOJ_hhb8F3gggosL1KOveg)
 Intro
 ==========================
