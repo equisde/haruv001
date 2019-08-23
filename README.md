@@ -3,13 +3,9 @@ Tribus Algo PoW/PoS Hybrid Cryptocurrency
 
 ![logo](http://i.imgur.com/gIe5vnw.png)
 
-[![GitHub version](https://img.shields.io/github/release/carsenk/haru.svg)](https://badge.fury.io/gh/carsenk%2Fharu)
-[![License: GPL v3](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/carsenk/haru/blob/master/COPYING)
-[![Haru downloads](https://img.shields.io/github/downloads/carsenk/haru/total.svg?maxAge=2592000)](https://github.com/carsenk/haru/releases)
-[![Join the chat at https://discord.gg/AcThv2y](https://img.shields.io/badge/Discord-Chat-blue.svg?logo=discord)](https://discord.gg/AcThv2y)
-
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/carsenk/haru.svg) ![GitHub repo size in bytes](https://img.shields.io/github/repo-size/carsenk/haru.svg)
-
+[![GitHub version](http://cryptoharu.com/assets/img/logo.png)](http://cryptoharu.com/assets/img/logo.png)
+[![License: GPL v3](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/equisde/haruv001/blob/master/COPYING)(https://github.com/carsenk/haru/releases)
+[![Join the chat at https://t.me/joinchat/NOJ_hhb8F3gggosL1KOveg](https://telegram.org/img/t_logo.png)](https://t.me/joinchat/NOJ_hhb8F3gggosL1KOveg)
 Intro
 ==========================
 Haru is a true optional anonymous, untraceable, and secure hybrid cryptocurrency.
@@ -21,7 +17,7 @@ Haru [HARU] is an anonymous, untraceable, energy efficient, Proof-of-Work (New T
 
 Specifications
 ==========================
-* Total number of coins: 10,000,000 HARU
+* Total number of coins: 60,000,000 HARU
 * Ideal block time: 30 seconds
 * Stake interest: 6% annual static inflation
 * Confirmations: 10 blocks
@@ -47,10 +43,8 @@ Technology
 
 LINKS
 ==========================
-* Official Website(https://haru.io/)
-* Official Forums(https://harutalk.org/)
-* Haru Twitter(https://twitter.com/harucoin)
-* Haru Discord Chat(https://discord.gg/C64HXbc)
+* Official Website(https://cryptoharu.com/)
+* Haru Telegram Chat(https://t.me/joinchat/NOJ_hhb8F3gggosL1KOveg)
 
 ASCII CAST TUTORIALS
 ==========================
